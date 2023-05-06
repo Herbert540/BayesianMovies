@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App</title>
+    <style>
+        /* Replace with your own CSS styles */
+        body {
+            background-image: url('https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/betting-articles/strategy/bayesien-hero.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        input {
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="/">
+        <h1>Enter a Sentiment:</h1>
+        <input type="text" name="word">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

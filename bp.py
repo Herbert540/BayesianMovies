@@ -385,7 +385,7 @@ if __name__ == "__main__":
 	# # Test task 2
 	
 	# # Train on a small set of reviews
-	small_classifier.train("movie_reviews_small")
+	# small_classifier.train("movie_reviews_small")
 
 	neg_count = get_total_words(small_classifier.neg_freqs)
 	pos_count = get_total_words(small_classifier.pos_freqs)
@@ -408,7 +408,7 @@ if __name__ == "__main__":
 	# # Test task 5
 
 	# print(small_classifier)
-	small_classifier.save("small_freqs.json")
+	# small_classifier.save("small_freqs.json")
 
 	# To test this, see if "small_freqs.json" is now in your folder
 	# assert path.exists("small_freqs.json"), "I don't detect that this file exists!"
@@ -417,7 +417,7 @@ if __name__ == "__main__":
 	# # Test task 6
 
 	# # Reset the classifier to forget all the words
-	small_classifier.reset()
+	# small_classifier.reset()
 	# print(small_classifier)
 	small_classifier.load("small_freqs.json")
 	# print(small_classifier)
@@ -546,6 +546,8 @@ if __name__ == "__main__":
 	# test_classification(small_classifier)
 	# print("\nLarge classifier performance")
 	# test_classification(large_classifier)
+
+
 
 
 
